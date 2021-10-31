@@ -4,3 +4,4 @@ Gece Development e ABONE OLUN : https://www.youtube.com/channel/UCo6RpKrVto75oaY
 
 DİSCORD ADRESİMİZ : https://discord.gg/BN2ZGpnj8p
 
+VALLAHA Gece Development e ABONE OLCAM ARTIK OLMAK ZORUNDASIN
