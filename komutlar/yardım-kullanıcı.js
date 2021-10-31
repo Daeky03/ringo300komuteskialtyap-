@@ -5,8 +5,8 @@ exports.run = (client, message, args) => {
   
     const juke = new Discord.RichEmbed()
     .setColor('GOLD')
-    .setAuthor(`iBOT | Kullanıcı Komutları`, client.user.avatarURL) 
-      .setDescription('**[Website](https://ibots.glitch.me)**')
+    .setAuthor(`Gece Developments | Kullanıcı Komutları`, client.user.avatarURL) 
+      .setDescription('**[Website]()**')
 .setThumbnail(client.user.avatarURL)
       .addField('**Komutlar:**', '`havadurumu`, `instagram`, `rastgeleşifre`, `ilginçbilgi`, `burç`, `tekerleme`, `davetoluştur`, `emojiyükle`, `ping`, `avatar`, `kullanıcı-bilgi`, `beşiktaş`, `fenerbahçe`, `galatasaray`, `spotify`, `youtube`')
     .setFooter(``, client.user.avatarURL)

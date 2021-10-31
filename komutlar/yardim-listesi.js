@@ -5,7 +5,7 @@ var prefix = loglar.prefix;
 
 exports.run = (client, message, params) => {
   const embedyardim = new Discord.RichEmbed()
-    .setTitle("Komut Listesi")
+    .setTitle("Gece Developments  Komut Listesi")
     .setDescription("")
     .setColor(0x00ffff)
     .setDescription(
@@ -20,7 +20,7 @@ exports.run = (client, message, params) => {
         `[Destek Sunucusu](https://discord.gg/AHe4u4m)`,
       false
     )
-    .setFooter("iBOT | Yardım Komutları");
+    .setFooter("Gece Developments | Yardım Komutları");
 
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());

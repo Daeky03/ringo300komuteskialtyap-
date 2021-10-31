@@ -21,7 +21,7 @@ exports.run = (client, message, args) => {
         .setTitle(`» Hey ${message.author.username} !`)
         .setAuthor("» Tosun Bot | Destek Sistemi")
         .setDescription("**Buradaki destek ekibimiz sizinle ilgilenecektir.\nDestek talebini iptal etmek için [!kapat](https://discord.gg/kQJQJgr ) yazabilirsin!**")
-        .setFooter('Tosun Bot | Destek Sistemi', client.user.avatarURL)
+        .setFooter('Gece Developments | Destek Sistemi', client.user.avatarURL)
         .setTimestamp()
         ch.send(embed).catch()
         ch.send("@everyone")

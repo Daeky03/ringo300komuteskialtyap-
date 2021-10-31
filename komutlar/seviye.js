@@ -26,7 +26,7 @@ exports.run = async(client, message, args) => {
   .addField('Kullanıcı:', user, true)
   .addField('Kullanıcı XP değeri:', '**'+kontrol+'**', true)
   .addField('Kullanıcı Seviye Değeri:', '**'+kontrol2+'**', true)
-  .setFooter('RTX-BOT Seviye Sistemi!')
+  .setFooter('Gece Developments Seviye Sistemi!')
   .setColor('RANDOM')
   .setTimestamp()
   .setThumbnail(user.avatarURL)
