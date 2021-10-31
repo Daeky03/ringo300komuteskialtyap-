@@ -34,7 +34,7 @@ exports.conf = {
 exports.help = {
   name: "koruma-sistemi",
   description:
-    "Sunucuya Bot Eklendiğinde Atılmasını Sağlayan Sistemi Başarıyla Aktifleştirirsiniz/Kapatırsınız.",
+    "Sunucuya Bot Eklendiğinde Atılmasını Sağlayan Sistemi Başarıyla Aktifleştirirsiniz/Kapatırsınız. Gece Developments iyikullanımlar diler",
   usage: "koruma-sistemi"
 };
  

@@ -124,7 +124,7 @@ client.on("message", async message => {
 client.on("message", async message => {
   if(message.author.id === client.user.id) return;
   if(message.guild) return;
-  client.channels.get('645670665784918017').send(new Discord.RichEmbed().setAuthor("Yeni Bir DM", client.user.avatarURL).setFooter(message.author.tag, message.author.avatarURL).setDescription(`**Gönderenin ID:** ${message.author.id}`).setTimestamp().addField("Mesaj", message.content).setColor("RANDOM"))
+  client.channels.get('kendi idnizi girin').send(new Discord.RichEmbed().setAuthor("Yeni Bir DM", client.user.avatarURL).setFooter(message.author.tag, message.author.avatarURL).setDescription(`**Gönderenin ID:** ${message.author.id}`).setTimestamp().addField("Mesaj", message.content).setColor("RANDOM"))
 })
 
 client.on('message', async message => {
@@ -134,7 +134,7 @@ client.on('message', async message => {
   let u = message.mentions.users.first() || message.author;
   if (command === "sunucu-kurulum") {
   if (message.guild.channels.find(channel => channel.name === "Bot Kullanımı")) return message.channel.send("Sunucu Zaten Ayarlanmış")
-  message.channel.send(`Bot Bilgi Kanallarının kurulumu başlatılsın mı? başlatılacak ise **kabul** yazınız.`)
+  message.channel.send(`Bot Bilgi Kanallarının kurulumu başlatılsın mı? başlatılacak ise **kabul** yazınız. Gece Developments iyi eğlenceler diler`)
       if (!message.member.hasPermission('ADMINISTRATOR'))
   return message.channel.send(" Bu Kodu `Yönetici` Yetkisi Olan Kullanabilir");
       message.channel.awaitMessages(response => response.content === 'kabul', {
@@ -361,7 +361,7 @@ client.on('guildMemberAdd', async member => {
 
 client.on("guildCreate", guild => { // Birisi botu sunucuya attıgında bot özel mesaj atar.
 const tesekkurler = new Discord.RichEmbed()
-.setTitle(`iBot | Bilgilendirme`)
+.setTitle(`Gece Developments | Bilgilendirme`)
 .setTimestamp()
 .setColor("GREEN")
 .setDescription(`Beni Sunucuna Eklediğin İçin Teşekkür Ederim \n Sana En İyi Şekilde Hizmet Edeceğim.\n Eğer Bir Sorunla Karşılaşırsan Destek Sunucuma Gel  https://discord.gg/AHe4u4m \n Komutlarımız için **!yardım** komutunu kullanınız.`)
@@ -502,7 +502,7 @@ client.on("message", async msg => {
                     msg.delete();                   
                     let embed = new Discord.RichEmbed()
                     .setColor(0xffa300)
-                    .setFooter('iBot  -|-  Reklam engellendi.', client.user.avatarURL)
+                    .setFooter('Gece Developments  -|-  Reklam engellendi.', client.user.avatarURL)
                     .setAuthor(msg.guild.owner.user.username, msg.guild.owner.user.avatarURL)
                     .setDescription("iBot Reklam sistemi, " + `***${msg.guild.name}***` + " adlı sunucunuzda reklam yakaladım.")
                     .addField('Reklamı yapan kişi', 'Kullanıcı: '+ msg.author.tag +'\nID: '+ msg.author.id, true)
@@ -641,7 +641,7 @@ if (!modlogkanal) return;
   .setColor("BLUE")
   .setTitle("MESAJ SİLİNDİ")
 .setDescription(`<@!${message.author.id}> adlı kullanıcı tarafından <#${message.channel.id}> kanalına gönderilen mesaj silindi!\n\nSilinen Mesaj: **${message.content}**`)
-  .setFooter("iBot |  Mod-Log")
+  .setFooter("Gece Developments|  Mod-Log")
   modlogkanal.sendEmbed(embed);
   })
 
@@ -655,7 +655,7 @@ if (!modlogkanal) return;
 
 	.setDescription(`Üye Sunucudan Yasaklandı! \n<@!${message.user.id}>, ${message.user.tag}`)
 		.setThumbnail(message.user.avatarURL)
-  .setFooter("iBot | mod-log")
+  .setFooter("Gece Developments | mod-log")
   modlogkanal.sendEmbed(embed);
   })
 client.on('channelCreate', async channel  => {
@@ -666,7 +666,7 @@ if (!modlogkanal) return;
 				let embed = new Discord.RichEmbed()
 					.setColor('RANDOM')
 				.setDescription(`${channel.name} adlı metin kanalı oluşturuldu.`)
-				.setFooter(`,RTX-BOT | Mod-Log Sistemi Kanal ID: ${channel.id}`)
+				.setFooter(`,Gece Developments | Mod-Log Sistemi Kanal ID: ${channel.id}`)
 				modlogkanal.send({embed});
 			};
 			if (channel.type === "voice") {
@@ -674,7 +674,7 @@ if (!modlogkanal) return;
 				.setColor('RANDOM')
 .setTitle("SES KANALI OLUŞTURULDU")
 				.setDescription(`${channel.name} adlı ses kanalı oluşturuldu!`)
-				.setFooter(`iBot | Mod-Log Sistemi Kanal ID: ${channel.id}`)
+				.setFooter(`Gece Developments | Mod-Log Sistemi Kanal ID: ${channel.id}`)
 
 				modlogkanal.send({embed});
 			}
@@ -688,7 +688,7 @@ if (!modlogkanal) return;
 				let embed = new Discord.RichEmbed()
 					.setColor('RANDOM')
 				.setDescription(`${channel.name} adlı metin kanalı silini!`)
-				.setFooter(`iBot | Mod-Log Sistemi Kanal ID: ${channel.id}`)
+				.setFooter(`Gece Developments | Mod-Log Sistemi Kanal ID: ${channel.id}`)
 				modlogkanal.send({embed});
 			};
 			if (channel.type === "voice") {
@@ -696,7 +696,7 @@ if (!modlogkanal) return;
 				.setColor('RANDOM')
 .setTitle("SES KANALI SİLİNDİ")
 				.setDescription(`${channel.name} adlı ses kanalı silindi`)
-			.setFooter(`RTX-BOT | Mod-Log Sistemi  Kanal ID: ${channel.id}`)
+			.setFooter(`Gece Developments | Mod-Log Sistemi  Kanal ID: ${channel.id}`)
 				modlogkanal.send({embed});
 			}
 	})
